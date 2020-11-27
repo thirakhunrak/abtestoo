@@ -10,11 +10,17 @@
 
 * [ ] Based on the observed data, what is the probability of the null hypothesis being false.
 
-* [ ] Assuming that our hypothesis is true, what is the chance that we reject the null hypothesis.
+* [X] Assuming that our hypothesis is true, what is the chance that we reject the null hypothesis.
 
-3. If we conduct a frequentist statistical test at 5% significance level repeatedly for 4,000 times, how many times can we expect to have statistically significant results even if group A and B are exactly the same?
+3. If we conduct a frequentist statistical test at 5% significance level repeatedly for 4,000 times, how many times can we expect to have statistically significant results even if group A and B are exactly the same? Ans 5%*4000=200
 
 4. Hamster Inc. once again wants to test the conversion rates between package colors of its sunflower seeds; this time it is Red Package vs Gold Package. The Red Package is the existing group with average conversion rate of 11%. If they think the minimum detectable effect is 1% and want to make a 80/20 control/test split, how many unique users should see each package color before we decide which one performs better? Assume that they are testing at significance level of 15%. Show your work.
+
+จากสูตร n=((m+1)/m)*((Z*var)/MDE)^2
+var=0.3129,m=0.25
+n=((0.25+1)/0.25)*((1.036*0.3129)/0.01)^2=5254.128
+n=5255
+Ans 5255+0.25(5255)=6569 คน
 
 5. Let us say Hamster Inc. ran the experiment and got the following results. 
 
@@ -30,18 +36,18 @@
 
 6. Which of the following are true about frequentist A/B tests? (True/False)
 
-* [ ] It does not tell us the magnitude of the difference between control and test groups.
+* [True] It does not tell us the magnitude of the difference between control and test groups.
 
-* [ ] We can never know when to stop the experiments.
+* [False] We can never know when to stop the experiments.
 
-* [ ] We can never determine if the null hypothesis being true.
+* [False] We can never determine if the null hypothesis being true.
 
-* [ ] We can run one or as many experiments as we want using the same significance level.
+* [True] We can run one or as many experiments as we want using the same significance level.
 
-* [ ] If we have too many samples in each group, the validity of the test can be jeopardized.
+* [True] If we have too many samples in each group, the validity of the test can be jeopardized.
 
-* [ ] If you have set up the experiment based on desired minimum detectable effect and significance level, statististical significance is the only factor in determining which group is the better one.
+* [False] If you have set up the experiment based on desired minimum detectable effect and significance level, statististical significance is the only factor in determining which group is the better one.
 
-* [ ] We can only test difference between two proportions.
+* [True] We can only test difference between two proportions.
 
-* [ ] More samples in control and test groups are always better.
+* [False] More samples in control and test groups are always better.
